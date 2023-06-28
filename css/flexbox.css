@@ -1,0 +1,131 @@
+.headerPrincipal .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerPrincipal-nav{
+    display: flex;
+}
+
+.contenidoPrincipal .container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.contenidoPrincipal .contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.videoSobre .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.videoSobre-sobre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.videoSobre-button{
+    width: 60vh;
+    transition: 0.3s;
+}
+
+.videoSobre-button:hover{
+    box-shadow: 2px 2px 2px #424141d1;
+    cursor: pointer;
+}
+
+.contenidoPrincipal-cursos-link{
+    width: 200px;
+    height: 100px;
+}
+
+.rodapePrincipal-navMap{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-map-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+
+/* Mobile 400px */
+
+@media (max-width: 400px){
+    .headerPrincipal .container{
+        flex-direction: column;
+    }
+    .headerPrincipal-nav{
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .headerPrincipal-nav-link{
+        width: 350px;
+        text-align: center;
+    }
+
+    .contenidoPrincipal-cursos-link{
+        width: 100%;
+       border-radius: 5px;
+    }
+
+    .videoSobre .container{
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .videoSobre-sobre-title{
+        margin-top: 50px;
+    }
+
+    .videoSobre-button{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .rodapePrincipal-navMap-list{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }   
+    
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+   
+   
+}
